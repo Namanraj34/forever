@@ -1,0 +1,146 @@
+<!-- <p>single-cart-product works!</p> -->
+
+
+<section class="single-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 mt-5 mb-5">
+                <div class="skinny-mainImg">
+                    <img [src]="img1" (click)="changeImg(img1)">
+                    <img [src]="img2" (click)="changeImg(img2)">
+                    <img [src]="img3" (click)="changeImg(img3)">
+                    <img [src]="img4" (click)="changeImg(img4)">
+                </div>
+            </div>
+
+            <div class="col-lg-4 main-product mt-5 mb-5">
+                <div class="single-image">
+                    <img [src]="mainImg">
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 mb-5">
+                <h4>{{pName}}</h4>
+                <h5>AED {{price}}</h5>
+                <p class="product-detail">{{detail}}</p>
+                <select class="form-control select-size" [(ngModel)]="selection">
+                    <option value="" selected>Size:</option>
+                    <option *ngFor="let size of sizes">{{size.cloth}}</option>
+                </select>
+
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <select class="form-control select-size" [(ngModel)]="selected">
+                            <option value="" selected>
+                                Quantity:
+                            </option>
+                            <option *ngFor="let n of item">{{n.name}}</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="timing">Order by <span>1pm</span>
+                        </p>
+                        <p class="timing">Delivery within <span>48 hours</span></p>
+                        <p class="timing">Note: We don't deliver on Sunday
+
+                        </p>
+                    </div>
+
+                    <div class="cart-btn">
+                        <button class="btn " (click)="addToCart()">ADD TO CART</button>
+                    </div>
+                    <div class="buy-btn">
+                        <a class="btn" routerLink="/Shipping" (click)="buytocart()">BUY IT NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="accordions mb-5">
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        DESCRIPTION
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="timing">A pair of skinny jeans featuring a high rise, five-pocket construction, and
+                            belt loops.</p>
+                        <h5><strong>Content + Care</strong></h5>
+                        <p class="timing">- 93% cotton, 4% polyester, 3% spandex</p>
+                        <p class="timing">- Machine wash cold</p>
+                        <label class="timing form-control">Item code 00450904</label>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        REVIEWS
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h5><strong>Customer Reviews</strong></h5>
+                        <p class="timing">No reviews yet</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="shopLook">
+    <div class="container look-color pt-3">
+
+        <h3 class="text-center pb-3">SHOP THE LOOK</h3>
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let look of looKes">
+                <div class="look-img">
+                    <img [src]="look.img" alt="">
+                </div>
+                <div class="look-para mt-2 mb-4">
+                    <p>{{look.para}}</p>
+                    <h6>{{look.price}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="customer mt-5 mb-5">
+    <div class="container">
+        <hr>
+        <h3 class="text-center">CUSTOMERS WHO BOUGHT THIS ITEM ALSO BOUGHT</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-2 customer-store" *ngFor="let custom of customer">
+                <div class="customer-img">
+                    <img [src]="custom.img" alt="">
+                </div>
+                <div class="customer-para text-center mt-2">
+                    <p>{{custom.para}}</p>
+                    <h6>{{custom.price}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="product-more text-center mt-5 mb-5">
+            <button class="btn ">SHOW MORE</button>
+        </div>
+    </div>
+</section>

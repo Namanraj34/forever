@@ -1,0 +1,86 @@
+<!-- <section class="stripe">
+    <div class="container stripe-width mt-5 mb-5">
+        <div class="payment-cart">
+            <h6>Payment Information</h6>
+            <div class="row all-stripe">
+                <div class="col-lg-2 mb-3 mt-4">
+                    <div class="debit">
+                        <p>Debit Cards</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 mb-3 mt-4">
+                    <label for="exampleFormControlInput1" class="form-label">We Accepted</label>
+                    <select class="form-control select-visa">
+                        <option value="">Select Card </option>
+                        <option value="">MasterCard Debit Card</option>
+                        <option value="">Visa Debit Card</option>
+                    </select>
+
+
+                    <div class="row ">
+                        <div class="col-lg-4 ">
+                            <input type="text" class="form-control mt-3" placeholder="Holder Name">
+                            <p class="exp mt-4">Expiry Date</p>
+                            <select class="form-control select-month" [(ngModel)]="selection">
+                                <option value="" selected>Month</option>
+                                <option *ngFor="let month of monthS">{{month.months}}</option>
+                            </select>
+
+                        </div>
+                        <div class="col-lg-4 ">
+                            <input type="text" class="form-control mt-3" placeholder="Card Number">
+                            <select class="form-control select-year" [(ngModel)]="yearSelect">
+                                <option value="" selected>year</option>
+                                <option *ngFor="let years of yearS">{{years.year}}</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 mt-5">
+                            <div class="row cvV">
+                                <div class="col-lg-4">
+                                    <p class="exp mt-4">CVV</p>
+                                    <input type="text" class="form-control payment-cvv">
+                                </div>
+                                <div class="col-lg-4  mt-5">
+                                    <p class="exp mt-3"></p><img src="assets/payment/cvv.png">
+                                </div>
+                                <div class="col-lg-4  mt-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-4">
+                        <div class="col-lg-3">
+                            <p>AED 99.00 </p>
+                            <div class="make-payment">
+                                <button class="btn" (click)="stripePayment()">Make Payment</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="small-content">
+                                (Total Amount Payable)
+                            </p>
+                            <div class="make-cancel">
+                                <button class="btn">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<div class="container">
+    <div class="thank-you text-center">
+        <img src="assets/thankyou.webp">
+    </div>
+    <div class="shop-more text-center mb-5">
+        <a class="btn" routerLink="">CONTINUE SHOPPING</a>
+    </div>
+</div>

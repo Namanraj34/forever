@@ -1,0 +1,40 @@
+.footer{
+    background-color: #502B2B;
+}
+
+
+.footer-a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-heading{
+    color: #DA7B84;
+    font-size: 14px;
+}
+
+.footer-btn{
+    background-color: #DA7B84;
+    color: #fff;
+    border-color: #DA7B84;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.footer-btn:hover{
+    background-color: #FDD7AA;
+    color: #B7721E;
+    border-color: #FDD7AA;
+}
+
+.email-footer a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.copyright{
+    background-color: #FCA8A6;
+}
+

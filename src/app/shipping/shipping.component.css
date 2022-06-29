@@ -1,0 +1,34 @@
+.shipping-form{
+    padding: 20px;
+    box-shadow: 0.5px 0px;
+}
+
+.btn{
+    padding: 12px 32px;
+    background-color: #fca8a6;
+    color: #fff;
+    font-weight: 500;
+    float: right;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: #FDD7AA;
+    color: #B7721E;
+}
+
+.ship-img img{
+    width: 100%;
+    max-width: 61px;
+    height: 89px;
+}
+
+.smal-text{
+    font-size: 13px;
+}
+
+.quanity-color{
+    color: rgb(255, 62, 62);
+}
+
+

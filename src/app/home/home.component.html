@@ -1,0 +1,174 @@
+<!-- <div class="container mt-3">
+    <h3 class="top-picks text-center">TOP PICKS</h3>
+    <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-2  mt-3" *ngFor="let top of topPicks">
+            <div class="img-top">
+                <img [src]="top.img" (click)="onClickImageTop(top.id)">
+            </div>
+            <div class="heading mt-1">
+                <p class="paras">{{top.name}}</p>
+            </div>
+        </div>
+
+    </div>
+</div> -->
+
+<div class="container mt-3">
+    <h3 class="top-picks text-center">TOP PICKS</h3>
+    <div class="grid-container">
+        <div class="grid-item" *ngFor="let top of topPicks">
+            <div class="img-top">
+                <img [src]="top.img" (click)="onClickImageTop(top.id)">
+            </div>
+            <div class="heading mt-1">
+                <p class="paras">{{top.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="banner mt-5 mb-5">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/banner/banner1.webp" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner/banner2.webp" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner/banner3.webp" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner/banner4.webp" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<div class="container mb-5">
+    <h3 class="text-center">THE DENIM SHOP</h3>
+    <div class="row">
+        <div class="col-lg-2 col-md-6 col-sm-12  denim-store mt-3" *ngFor="let deni of denims">
+            <div class="denim-img">
+                <img [src]="deni.img" (click)="onClickImage(deni.id)">
+            </div>
+            <div class="denim-para mt-2">
+                <h4>{{deni.para}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container mb-5">
+    <div class="row collection-section">
+        <div class="col-md-4 denim-collection mt-3" *ngFor="let collection of denimCol">
+            <div class="collection-img">
+                <img [src]="collection.img" (click)="onClickAll(collection.id)">
+            </div>
+        </div>
+        <div class="banner-summer mt-5">
+            <img src="assets/banner/banner-summer.webp">
+        </div>
+    </div>
+</div>
+
+
+<div class="section-women-wear">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-2 women-store mt-3" *ngFor="let womens of womenWear">
+                <div class="women-img">
+                    <img [src]="womens.img" alt="">
+                </div>
+                <div class="women-para text-center mt-3">
+                    <h4>{{womens.para}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="banner-swimwear  mt-5">
+            <img src="assets/banner/banner-swimwear.webp">
+        </div>
+
+        <div class="products mt-5">
+            <div class="row">
+                <div class="col-md-3" *ngFor="let product of productsImg">
+                    <div class="products-img">
+                        <img [src]="product.img" alt="">
+                    </div>
+                    <div class="product-para mt-2">
+                        <p>{{product.para}}</p>
+                        <h6>{{product.price}}</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-more text-center mt-5 mb-5">
+                <button class="btn ">SHOW MORE</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="trending">
+    <div class="container">
+        <hr>
+        <h3 class="text-center">TRENDING</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-2 trending-store" *ngFor="let trends of trending">
+                <div class="trending-img">
+                    <img [src]="trends.img" alt="">
+                </div>
+                <div class="trending-para text-center mt-2">
+                    <p>{{trends.para}}</p>
+                    <h6>{{trends.price}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="product-more text-center mt-5 mb-5">
+            <button class="btn ">SHOW MORE</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="arivel">
+    <div class="container">
+        <hr>
+        <h3 class="text-center">NEW ARRIVALS</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-2 arivvel-store" *ngFor="let ariv of arivel">
+                <div class="arivel-img">
+                    <img [src]="ariv.img" alt="">
+                </div>
+                <div class="product-para text-center mt-2">
+                    <p>{{ariv.para}}</p>
+                    <h6>{{ariv.price}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="product-more text-center mt-5">
+            <button class="btn mb-5">SHOW MORE</button>
+        </div>
+    </div>
+</section>

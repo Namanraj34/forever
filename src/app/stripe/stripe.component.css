@@ -1,0 +1,76 @@
+.stripe-width{
+    width: 70%;
+}
+
+.order-details{
+    background: #eeeeee;
+    padding: 10px;
+}
+
+.select-year{
+    margin-top: 65px;
+}
+
+.payment-cart h6{
+    padding: 20px;
+    background: #dadada;
+}
+
+.payment-cvv{
+    width: 60px;
+}
+
+.small-content{
+    font-size: 14px;
+}
+
+
+
+.make-payment .btn{
+    padding: 8px 8px;
+    background-color: #6BBB69;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.make-payment .btn:hover{
+    background-color: #fca8a6;
+    color: #fff;
+}
+
+.make-cancel .btn{   
+    padding: 8px 18px;
+    margin-top: 4px;
+    background-color: #ff4747;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.make-cancel .btn:hover{
+    background-color: #fca8a6;
+    color: #fff;
+}
+
+.select-visa{
+    width: 50%;
+}
+
+.cvV{
+    margin-top: 7px;
+}
+
+.shop-more  .btn{
+    padding: 8px 69px;
+    background-color: #fca8a6;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.shop-more  .btn:hover{
+    background-color: #FFF;
+    border: 1px solid #fca8a6;
+    color: #000;
+}

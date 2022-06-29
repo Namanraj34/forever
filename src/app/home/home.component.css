@@ -1,0 +1,189 @@
+.img-top img {
+  border-radius: 50%;
+}
+
+.paras {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.denim-store {
+  display: inline-block;
+  /* width: 20%; */
+  margin-right: 42px;
+  cursor: pointer;
+}
+
+.denim-collection {
+  display: inline-block;
+  width: 25%;
+}
+
+.trending-store {
+  display: inline-block;
+  width: 20%;
+}
+
+.denim-img img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+}
+
+.denim-collection img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+}
+
+.banner-summer img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+}
+
+.products-img img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+  height: auto;
+  max-height: 405px;
+}
+
+.arivvel-store img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+  height: auto;
+  max-height: 255px;
+}
+
+.trending-store img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+  height: auto;
+  max-height: 335px;
+}
+
+.product-para {
+  font-size: 14px;
+}
+
+.product-para h6 {
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 87px;
+  background-color: #fdd7aa;
+  color: #b7721e;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #fca8a6;
+  color: #fff;
+}
+
+.women-store img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+  height: auto;
+  max-height: 270px;
+}
+
+.banner-swimwear img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+  display: inline-block;
+  width: 100%;
+}
+
+.women-store {
+  display: inline-block;
+  width: 16%;
+  margin: 0 4px;
+}
+
+.women-para h4 {
+  font-weight: bold;
+}
+
+.denim-collection .collection-img {
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.collection-section {
+  padding: 0 48px;
+}
+
+.denim-store .denim-para {
+  bottom: 40px;
+  width: 90%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.denim-para h4 {
+  margin-top: -71px;
+  text-align: center;
+  font-size: 18px;
+  margin-left: 52px;
+  color: #000;
+  font-weight: 700;
+}
+
+.banner img {
+  border-top: 10px solid #d37a76 !important;
+  border-left: 10px solid #d37a76 !important;
+  border-right: 10px solid #fca8a6 !important;
+  border-bottom: 10px solid #fca8a6 !important;
+  display: inline-block;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+  }
+  .grid-item1 {
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+@media (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}

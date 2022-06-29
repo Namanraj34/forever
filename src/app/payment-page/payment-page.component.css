@@ -1,0 +1,64 @@
+.heading{
+    padding: 14px;
+    background: #000;
+    color: #fff;
+}
+
+.payment-head{
+    width: 70%;
+}
+
+.order-details{
+    background: #eeeeee;
+    padding: 10px;
+}
+
+.select-year{
+    margin-top: 65px;
+}
+
+.payment-cart h6{
+    padding: 20px;
+    background: #dadada;
+}
+
+.payment-cvv{
+    width: 60px;
+}
+
+.small-content{
+    font-size: 14px;
+}
+
+
+
+.make-payment .btn{
+    padding: 8px 8px;
+    background-color: #6BBB69;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.make-payment .btn:hover{
+    background-color: #fca8a6;
+    color: #fff;
+}
+
+.make-cancel .btn{
+    padding: 8px 18px;
+    margin-top: 4px;
+    background-color: #6BBB69;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.make-cancel .btn:hover{
+    background-color: #fca8a6;
+    color: #fff;
+}
+
+.footer img{
+    margin-right: 15px;
+}

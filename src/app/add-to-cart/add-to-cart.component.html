@@ -1,0 +1,107 @@
+<section class="mycards mt-3 mb-3">
+    <div class="container ">
+        <h3 class="text-center">MY CART</h3>
+        <div class="alert alert-warning mt-3 text-center" role="alert">
+            <p>Please, hurry! Someone has placed an order on one of the items you have in the cart. We'll keep it for
+                you for <b>30:00</b> minutes..</p>
+        </div>
+        <div class="row mt-5 main-details" *ngFor="let data of cartData">
+            <div class="col-lg-3">
+                <h5 class="cart-heading">PRODUCTS</h5>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="card-image">
+                            <img [src]="data.img">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="product-name">{{data.name}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h5 class="cart-heading" class="cart-heading">PRICE</h5>
+                <p class="product-name">AED {{data.price}}</p>
+            </div>
+            <div class="col-lg-2">
+                <h5 class="cart-heading">QUANTITY</h5>
+                <input type="number" [value]="data.quantity" [(ngModel)]="final_Quantity"
+                    class="form-control product-name" placeholder="1">
+
+            </div>
+            <div class="col-lg-2">
+                <h5 class="cart-heading">TOTAL</h5>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="product-name">AED {{data.subTotal}}</p>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <a class="product-name btn" (click)="onDeleteUser(data.id)">x</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="cart-heading">ORDER SUMMARY</h5>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-4"><b>Sub Total:</b></div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4"><b>AED {{data.subTotal}}</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4 cart-updated"> <a class="product-name btn"
+                            (click)="updateUser(data.id)">UPDATED</a></div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6"></div>
+        <div class="col-lg-3">
+            <div class="row">
+                <div class="col-lg-4"><b>Total:</b></div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4"><b>AED {{finalPrice}}</b></div>
+            </div>
+            <div class="cart-more text-center mt-5 mb-3">
+                <a class="btn" routerLink="/Shipping">PROCEED TO CHECKOUT</a>
+            </div>
+            <div class="shop-more text-center ">
+                <a class="btn" routerLink="">CONTINUE SHOPPING</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="customer mt-5 mb-5">
+    <div class="container">
+        <hr>
+        <h3 class="text-center">CUSTOMERS WHO BOUGHT THIS ITEM ALSO BOUGHT</h3>
+        <hr>
+        <div class="row">
+            <div class="col-lg-2 customer-store" *ngFor="let custom of customer">
+                <div class="customer-img">
+                    <img [src]="custom.img" alt="">
+                </div>
+                <div class="customer-para text-center mt-2">
+                    <p>{{custom.para}}</p>
+                    <h6>{{custom.price}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="product-more text-center mt-5 mb-5">
+            <button class="btn ">SHOW MORE</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+.navbar{
+    background-color: #FCA8A6;
+}
+
+.nav-item a , .navbar-brand{
+    color: #fff;
+    font-weight: 600;
+}
+
+#color{
+  color: rgb(255, 255, 91);
+}
+
+.search-btn{
+    background-color: antiquewhite;
+    color: #000;
+    margin-right: 20px;
+}
+
+.search-btn:hover{
+    background-color: #FCA8A6;
+    border-color: #FCA8A6;
+    color: #fff;
+}
+
+#navbarSupportedContent{
+    margin-left: 229px;
+}
+
+@media (min-width: 350px) and (max-width: 768px){
+    #navbarSupportedContent{
+        margin-left: 0px;
+    }
+}
+/* 
+.cart-number{
+    border-radius: 50%;
+    width: 17px;
+    font-size: 14px;
+    text-align: center;
+    height: 20px;
+    background-color: #EFE81D;
+    color: #000;
+} */

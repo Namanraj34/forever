@@ -1,0 +1,21 @@
+<section class="skinny mt-5">
+    <h3 class="text-center">{{pName}}</h3>
+    <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-md-3 mt-5 topPic-store" *ngFor="let all of product" (click)="showAll(all)">
+                <div class="topPic-img">
+                    <img [src]="all.img">
+                </div>
+                <div class="topPic-para mt-2">
+                    <p>{{all.para}}</p>
+                    <h6>AED {{all.price}} {{all.priceLess}}</h6>
+                </div>
+
+            </div>
+        </div>
+        <div class="topPic-more text-center mt-5 mb-5">
+            <button class="btn">SHOW MORE</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+.skin-img img{
+    border-top: 10px solid #d37a76!important;
+    border-left: 10px solid #d37a76!important;
+    border-right: 10px solid #fca8a6!important;
+    border-bottom: 10px solid #fca8a6!important;
+    height: auto;
+    max-height: 405px;
+    cursor: pointer;
+}
+
+.skin-para{
+    font-size: 14px;
+    text-align: center;
+}
+
+.skin-para h6{
+    text-align: center;
+}
+
+.skin-more .btn{
+    padding: 8px 87px;
+    background-color: #FDD7AA;
+    color: #B7721E;
+    font-weight: 500;
+    font-size: 15px;
+}
+
