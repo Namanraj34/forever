@@ -10,18 +10,23 @@
 .denim-store {
   display: inline-block;
   /* width: 20%; */
-  margin-right: 42px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.denim-collection {
+/* .denim-collection {
   display: inline-block;
   width: 25%;
-}
+} */
 
 .trending-store {
   display: inline-block;
   width: 20%;
+}
+
+
+.trending-para{
+  width: 220px;
 }
 
 .denim-img img {
@@ -36,6 +41,7 @@
   border-left: 10px solid #d37a76 !important;
   border-right: 10px solid #fca8a6 !important;
   border-bottom: 10px solid #fca8a6 !important;
+    margin-left: -13px;
 }
 
 .banner-summer img {
@@ -63,7 +69,7 @@
   max-height: 255px;
 }
 
-.trending-store img {
+.trending-img img {
   border-top: 10px solid #d37a76 !important;
   border-left: 10px solid #d37a76 !important;
   border-right: 10px solid #fca8a6 !important;
@@ -119,6 +125,7 @@
 
 .women-para h4 {
   font-weight: bold;
+  width: 183px;
 }
 
 .denim-collection .collection-img {
@@ -130,9 +137,9 @@
   margin: 0 auto;
 }
 
-.collection-section {
+/* .collection-section {
   padding: 0 48px;
-}
+} */
 
 .denim-store .denim-para {
   bottom: 40px;
@@ -145,11 +152,10 @@
 
 .denim-para h4 {
   margin-top: -71px;
-  text-align: center;
-  font-size: 18px;
-  margin-left: 52px;
-  color: #000;
-  font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
 }
 
 .banner img {
@@ -181,9 +187,153 @@
     text-align: center;
   }
 
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto  auto ;
+  }
+  .grid-item2 {
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto  auto auto auto;
+  }
+  .grid-item3 {
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto  auto;
+  }
+  .grid-item4 {
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  .grid-container5 {
+    display: grid;
+    grid-template-columns: auto auto auto  auto auto auto;
+  }
+  .grid-item5 {
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  .grid-container6 {
+    display: grid;
+    grid-template-columns: auto auto auto  auto auto auto;
+  }
+  .grid-item6 {
+    /* padding: 20px; */
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+
 @media (max-width: 767px) {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto;
   }
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-container5 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-container6 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+
+
+  .denim-img img{
+    width: 159px;
+    margin-bottom: 36px;
+  }
+
+  .denim-para h4 {
+    margin-top: -79px;
+}
+
+
+.denim-collection img{
+  width: 164px;
+}
+
+.banner-summer img{
+  width: 345px;
+}
+
+.women-store img{
+  width: 159px;
+}
+
+.women-store h4{
+  font-size: 18px;
+   width: 170px;
+}
+
+.products-img img{
+  width: 159px;
+}
+
+.trending-img img{
+  width: 159px;
+  margin-left: 2px;
+
+}
+
+.arivvel-store img{
+  width: 159px;
+}
+
+.product-para p{
+  font-size: 12px;
+  margin-right: 16px;
+  width: 156px;
+}
+
+.trending-para{
+  font-size: 12px;
+  width: 175px;
+}
+
+.btn {
+  padding: 8px 31px;
+ 
+}
+
 }

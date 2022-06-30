@@ -59,10 +59,12 @@
 </div>
 
 
+
+
 <div class="container mb-5">
     <h3 class="text-center">THE DENIM SHOP</h3>
-    <div class="row">
-        <div class="col-lg-2 col-md-6 col-sm-12  denim-store mt-3" *ngFor="let deni of denims">
+    <div class="grid-container1">
+        <div class="grid-item1 denim-store mt-3" *ngFor="let deni of denims">
             <div class="denim-img">
                 <img [src]="deni.img" (click)="onClickImage(deni.id)">
             </div>
@@ -74,10 +76,39 @@
 </div>
 
 
+<!-- <div class="container mb-5">
+    <h3 class="text-center">THE DENIM SHOP</h3>
+    <div class="row">
+        <div class="col-lg-2 col-md-6 col-sm-12  denim-store mt-3" *ngFor="let deni of denims">
+            <div class="denim-img">
+                <img [src]="deni.img" (click)="onClickImage(deni.id)">
+            </div>
+            <div class="denim-para mt-2">
+                <h4>{{deni.para}}</h4>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 
 
 <div class="container mb-5">
+    <div class="grid-container2 collection-section">
+        <div class="grid-item2 denim-collection mt-3" *ngFor="let collection of denimCol">
+            <div class="collection-img">
+                <img [src]="collection.img" (click)="onClickAll(collection.id)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="banner-summer text-center mt-5">
+        <img src="assets/banner/banner-summer.webp">
+    </div>
+</div>
+
+<!-- <div class="container mb-5">
     <div class="row collection-section">
         <div class="col-md-4 denim-collection mt-3" *ngFor="let collection of denimCol">
             <div class="collection-img">
@@ -88,11 +119,54 @@
             <img src="assets/banner/banner-summer.webp">
         </div>
     </div>
+</div> -->
+
+
+
+
+<div class="container mb-5">
+    <div class="grid-container3">
+        <div class="grid-item3 women-store mt-3" *ngFor="let womens of womenWear">
+            <div class="women-img">
+                <img [src]="womens.img" alt="">
+            </div>
+            <div class="women-para text-center mt-3">
+                <h4>{{womens.para}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="banner-swimwear  mt-5">
+        <img src="assets/banner/banner-swimwear.webp">
+    </div>
 </div>
 
 
-<div class="section-women-wear">
-    <div class="container mb-5">
+
+<div class="container mb-5">
+    <div class="products mt-5">
+        <div class="grid-container4">
+            <div class="grid-item4" *ngFor="let product of productsImg">
+                <div class="products-img">
+                    <img [src]="product.img" alt="">
+                </div>
+                <div class="product-para mt-2">
+                    <p>{{product.para}}</p>
+                    <h6>{{product.price}}</h6>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-more text-center mt-5 mb-5">
+            <button class="btn ">SHOW MORE</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="section-women-wear">
+    <div class="container mb-5"> -->
+<!-- <div class="container mb-5">
         <div class="row">
             <div class="col-md-2 women-store mt-3" *ngFor="let womens of womenWear">
                 <div class="women-img">
@@ -105,9 +179,9 @@
         </div>
         <div class="banner-swimwear  mt-5">
             <img src="assets/banner/banner-swimwear.webp">
-        </div>
+        </div> -->
 
-        <div class="products mt-5">
+<!-- <div class="products mt-5">
             <div class="row">
                 <div class="col-md-3" *ngFor="let product of productsImg">
                     <div class="products-img">
@@ -123,9 +197,9 @@
             <div class="product-more text-center mt-5 mb-5">
                 <button class="btn ">SHOW MORE</button>
             </div>
-        </div>
-    </div>
-</div>
+        </div> -->
+<!-- </div>
+</div> -->
 
 
 <section class="trending">
@@ -133,18 +207,18 @@
         <hr>
         <h3 class="text-center">TRENDING</h3>
         <hr>
-        <div class="row">
-            <div class="col-lg-2 trending-store" *ngFor="let trends of trending">
+        <div class="grid-container5">
+            <div class="grid-item5 trending-store" *ngFor="let trends of trending">
                 <div class="trending-img">
                     <img [src]="trends.img" alt="">
                 </div>
-                <div class="trending-para text-center mt-2">
+                <div class="trending-para  mt-2">
                     <p>{{trends.para}}</p>
-                    <h6>{{trends.price}}</h6>
+                    <h6 class="mb-5">{{trends.price}}</h6>
                 </div>
             </div>
         </div>
-        <div class="product-more text-center mt-5 mb-5">
+        <div class="product-more text-center mb-5">
             <button class="btn ">SHOW MORE</button>
         </div>
     </div>
@@ -156,18 +230,18 @@
         <hr>
         <h3 class="text-center">NEW ARRIVALS</h3>
         <hr>
-        <div class="row">
-            <div class="col-lg-2 arivvel-store" *ngFor="let ariv of arivel">
+        <div class="grid-container5">
+            <div class="grid-item5 arivvel-store" *ngFor="let ariv of arivel">
                 <div class="arivel-img">
                     <img [src]="ariv.img" alt="">
                 </div>
                 <div class="product-para text-center mt-2">
                     <p>{{ariv.para}}</p>
-                    <h6>{{ariv.price}}</h6>
+                    <h6 class="mb-5">{{ariv.price}}</h6>
                 </div>
             </div>
         </div>
-        <div class="product-more text-center mt-5">
+        <div class="product-more text-center">
             <button class="btn mb-5">SHOW MORE</button>
         </div>
     </div>
